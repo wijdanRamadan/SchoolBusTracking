@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "858197866128",
+    "firebase_url": "https://schoolbustracking-b3af8.firebaseio.com",
+    "project_id": "schoolbustracking-b3af8",
+    "storage_bucket": "schoolbustracking-b3af8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858197866128:android:835255cdbf554c09",
+        "android_client_info": {
+          "package_name": "com.passion.wijdan.schoolbustracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858197866128-dml6bkfihtd7o4t0lfiu0107gbfdrr07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.passion.wijdan.schoolbustracking",
+            "certificate_hash": "39b49b1c1c273a818729f86576e9c5f3dbf33660"
+          }
+        },
+        {
+          "client_id": "858197866128-mvqg8i3ljavnaqdncp57dod74dlc13ft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO9jT_H0HXTmD7i3l2M2veam65lo_G8eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858197866128-mvqg8i3ljavnaqdncp57dod74dlc13ft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

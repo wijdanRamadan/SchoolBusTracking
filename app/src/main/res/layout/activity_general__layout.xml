@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FDFEFE ">
+
+    >
+
+    <Button
+        android:id="@+id/activity_general_btnadd"
+        style="@style/ButtonBorder.Accent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="0dp"
+
+        android:text="Add Driver"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        />
+
+    <Button
+        android:id="@+id/activity_general_btntrack"
+        style="@style/ButtonBorder.Accent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="0dp"
+
+        android:text="Track bus"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/activity_general_btnreg"
+        style="@style/ButtonBorder.Accent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="0dp"
+
+        android:text="Register student"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+      />
+
+    <Button
+        android:id="@+id/activity_general_btnbus"
+        style="@style/ButtonBorder.Accent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="0dp"
+        android:text="View bus details"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/activity_general_btnfeed"
+        style="@style/ButtonBorder.Accent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="0dp"
+        android:text="view feedback"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/activity_general_btnlogout"
+        style="@style/ButtonBorder.Accent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="0dp"
+
+        android:text="logout"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>
