@@ -58,7 +58,6 @@
         android:layout_marginTop="-110dp"
         android:ems="10"
         android:hint="Student Class"
-        android:background="@drawable/rounded_border_edittext"
         android:textColor="#000000"
         android:textSize="24sp"
 

@@ -10,6 +10,10 @@ public class Student {
     }
     String sName;
 
+    public Student() {
+
+    }
+
     public String getsName() {
         return sName;
     }
@@ -28,6 +32,26 @@ public class Student {
 
     public int getBusNo() {
         return busNo;
+    }
+
+    public void setsName(String sName) {
+        this.sName = sName;
+    }
+
+    public void setsClass(String sClass) {
+        this.sClass = sClass;
+    }
+
+    public void setpName(String pName) {
+        this.pName = pName;
+    }
+
+    public void setpEmail(String pEmail) {
+        this.pEmail = pEmail;
+    }
+
+    public void setBusNo(int busNo) {
+        this.busNo = busNo;
     }
 
     String sClass;

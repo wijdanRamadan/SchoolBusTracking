@@ -1,42 +1,79 @@
 {
   "project_info": {
-    "project_number": "858197866128",
-    "firebase_url": "https://schoolbustracking-b3af8.firebaseio.com",
-    "project_id": "schoolbustracking-b3af8",
-    "storage_bucket": "schoolbustracking-b3af8.appspot.com"
+    "project_number": "345716329060",
+    "firebase_url": "https://parentapp-7f3e3.firebaseio.com",
+    "project_id": "parentapp-7f3e3",
+    "storage_bucket": "parentapp-7f3e3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:858197866128:android:835255cdbf554c09",
+        "mobilesdk_app_id": "1:345716329060:android:976aef693ced91ad",
         "android_client_info": {
           "package_name": "com.passion.wijdan.schoolbustracking"
         }
       },
       "oauth_client": [
         {
-          "client_id": "858197866128-dml6bkfihtd7o4t0lfiu0107gbfdrr07.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.passion.wijdan.schoolbustracking",
-            "certificate_hash": "39b49b1c1c273a818729f86576e9c5f3dbf33660"
-          }
-        },
-        {
-          "client_id": "858197866128-mvqg8i3ljavnaqdncp57dod74dlc13ft.apps.googleusercontent.com",
+          "client_id": "345716329060-o7pum0pav81tmbd6nfktn94jilu14l2b.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBO9jT_H0HXTmD7i3l2M2veam65lo_G8eg"
+          "current_key": "AIzaSyBWBsOW4-UZJGaG2bLiw1DwwEWPKcPXoD4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "858197866128-mvqg8i3ljavnaqdncp57dod74dlc13ft.apps.googleusercontent.com",
+              "client_id": "345716329060-o7pum0pav81tmbd6nfktn94jilu14l2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345716329060:android:beb22b5581b8db06",
+        "android_client_info": {
+          "package_name": "com.example.eman.parentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345716329060-63rc5a5u9utiu5721di64ehtvta8efn5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eman.parentapp",
+            "certificate_hash": "bd9456f59fd923130d263aa1321cd432d7288f9d"
+          }
+        },
+        {
+          "client_id": "345716329060-9u83ll9f13mncgmsnmfao9p2pra9tsgu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eman.parentapp",
+            "certificate_hash": "2f38bd9a56f40cb147c4e3d26b984169f5d9481c"
+          }
+        },
+        {
+          "client_id": "345716329060-o7pum0pav81tmbd6nfktn94jilu14l2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWBsOW4-UZJGaG2bLiw1DwwEWPKcPXoD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345716329060-o7pum0pav81tmbd6nfktn94jilu14l2b.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

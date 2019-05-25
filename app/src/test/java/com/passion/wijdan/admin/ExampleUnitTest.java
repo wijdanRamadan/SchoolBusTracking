@@ -1,4 +1,4 @@
-package com.passion.wijdan.schoolbustracking;
+package com.passion.wijdan.admin;
 
 import org.junit.Test;
 

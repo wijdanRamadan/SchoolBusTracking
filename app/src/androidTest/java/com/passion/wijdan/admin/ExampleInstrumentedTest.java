@@ -1,4 +1,4 @@
-package com.passion.wijdan.schoolbustracking;
+package com.passion.wijdan.admin;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

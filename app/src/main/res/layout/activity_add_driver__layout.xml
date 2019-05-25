@@ -1,12 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#FDFEFE ">
 
+    android:background="#FDFEFE ">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Driver ID:"
+        android:textColor="#5499C7"
+        android:textColorHighlight="#F9E79F"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold|italic"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/activity_add_driver_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="-110dp"
+        android:ems="10"
+        android:hint=""
+        android:textColor="#000000"
+        android:textSize="30dp"
+
+        />
     <TextView
         android:id="@+id/txtadd"
         android:layout_width="match_parent"
@@ -102,6 +130,31 @@
         android:textSize="30dp"
 
         />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Password:"
+        android:textColor="#5499C7"
+        android:textColorHighlight="#F9E79F"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold|italic"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/activity_add_driver_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="-110dp"
+        android:ems="10"
+        android:hint=""
+        android:textColor="#000000"
+        android:textSize="30dp"
+
+        />
 
 
     <Button
@@ -117,5 +170,5 @@
         android:textAllCaps="true"
         android:textSize="30sp"
         android:textStyle="bold|italic" />
-
 </LinearLayout>
+</ScrollView>

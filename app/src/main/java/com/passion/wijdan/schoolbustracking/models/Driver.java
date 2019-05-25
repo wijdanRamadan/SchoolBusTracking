@@ -1,12 +1,15 @@
 package com.passion.wijdan.schoolbustracking.models;
 
 public class Driver {
-    public Driver(String name, String phone , int no) {
+    public Driver(String name, String phone , int no , String password) {
         this.name = name;
         this.phone = phone;
         this.busNo=no;
+        this.password=password;
     }
+    public Driver() {
 
+    }
     public String getName() {
         return name;
     }
@@ -23,7 +26,22 @@ public class Driver {
         this.phone = phone;
     }
 
-    public String name,phone;
+    public String name;
+    public String phone;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setBusNo(int busNo) {
+        this.busNo = busNo;
+    }
+
+    public String password;
 
     public int getBusNo() {
         return busNo;

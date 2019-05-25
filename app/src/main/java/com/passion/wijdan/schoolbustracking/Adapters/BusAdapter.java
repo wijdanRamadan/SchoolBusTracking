@@ -1,83 +1,46 @@
 package com.passion.wijdan.schoolbustracking.Adapters;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
-import com.firebase.ui.firestore.FirestoreRecyclerOptions;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
-import com.passion.wijdan.schoolbustracking.R;
+import com.passion.wijdan.admin.R;
 import com.passion.wijdan.schoolbustracking.models.Bus;
 
-public class BusAdapter extends FirestoreRecyclerAdapter<Bus,BusAdapter.BusHolder> {
+import java.util.ArrayList;
+import java.util.List;
 
+public class BusAdapter extends ArrayAdapter<Bus> {
 
-    /**
-     * Create a new RecyclerView adapter that listens to a Firestore Query.  See {@link
-     * FirestoreRecyclerOptions} for configuration options.
-     *
-     * @param options
-     */
-    public BusAdapter(@NonNull FirestoreRecyclerOptions<Bus> options) {
-        super(options);
-    }
-
-    @Override
-    protected void onBindViewHolder(@NonNull BusAdapter.BusHolder holder, int position, @NonNull Bus model) {
-              holder.driverName.setText(model.getDriverName());
-              holder.contactNo.setText(model.getContactNo());
-              holder.busNo.setText(String.valueOf(model.getBusNo()));
-    }
-
-    @NonNull
-    @Override
-    public BusAdapter.BusHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.bus_list_view , viewGroup , false);
-        return new BusHolder(v);
-    }
-    public static BusAdapter get() {
-        Query query = FirebaseFirestore.getInstance()
-                .collection("Bus")
-                .limit(50);
-
-        FirestoreRecyclerOptions<Bus> options = new FirestoreRecyclerOptions.Builder<Bus>()
-                .setQuery(query, Bus.class)
-                .build();
-
-        return new BusAdapter(options);
+    private Context mContext;
+    private List<Bus> BusList = new ArrayList<>();
+    public BusAdapter(@NonNull Context context,  ArrayList<Bus> list) {
+        super(context, 0 , list);
+        mContext = context;
+        BusList = list;
     }
 
 
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        View listItem = convertView;
+        if(listItem == null)
+            listItem = LayoutInflater.from(mContext).inflate(R.layout.bus_list_view,parent,false);
+
+        Bus currentBus = BusList.get(position);
 
 
-    public class BusHolder extends RecyclerView.ViewHolder {
-        View itemView;
-        TextView driverName;
-        TextView busNo;
-        TextView contactNo;
+        TextView busnumber = (TextView) listItem.findViewById(R.id.busNumber);
+        busnumber.setText(currentBus.getBusNo());
 
-        public BusHolder(@NonNull View itemView) {
-            super(itemView);
-            this.itemView = itemView;
-            driverName = itemView.findViewById(R.id.driverNameDriverListView);
-            contactNo = itemView.findViewById(R.id.driverContactDriverListView);
-            busNo = itemView.findViewById(R.id.busNumber);
-        }
+        TextView Drivername = (TextView) listItem.findViewById(R.id.driverNameDriverListView);
+       Drivername.setText(currentBus.getDriverName());
 
-        public void setBus(Bus bus)
-        {
-            driverName.setText(bus.getDriverName());
-            contactNo.setText(bus.getContactNo());
-            busNo.setText(String.valueOf(bus.getBusNo()));
-        }
-
+        return listItem;
     }
-
-
 }
+

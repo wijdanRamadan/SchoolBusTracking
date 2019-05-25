@@ -7,10 +7,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.passion.wijdan.schoolbustracking.R;
+import com.passion.wijdan.admin.R;
 
 public class GeneralActivity extends AppCompatActivity {
-  Button addDriver ,addStudent , viewBusDetailes ,logOut;
+  Button addDriver ,addStudent , viewBusDetailes ,logOut,trackus;
 
   FirebaseAuth firebaseAuth;
     @Override
@@ -47,6 +47,19 @@ public class GeneralActivity extends AppCompatActivity {
                 logOut();
             }
         });
+        trackus=findViewById(R.id.activity_general_btntrack);
+        trackus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startTrackActivity();
+            }
+        });
+
+    }
+
+    private void startTrackActivity() {
+        Intent intent = new Intent(this,TrackBus.class);
+        startActivity(intent);
     }
 
     private void startAddDriverActivity() {

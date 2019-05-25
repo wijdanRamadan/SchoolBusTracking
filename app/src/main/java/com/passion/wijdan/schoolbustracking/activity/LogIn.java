@@ -14,7 +14,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.passion.wijdan.schoolbustracking.R;
+import com.passion.wijdan.admin.R;
 
 public class LogIn extends AppCompatActivity {
     public EditText loginEmailId, logInpasswd;
